@@ -1,0 +1,181 @@
+\<!DOCTYPE html>
+
+<!-- Cameron Emsley-Drummond March 2025 -->
+
+<html lang="en-ca">
+<head>
+    <meta charset="utf-8">
+    <title>Exercise 6: Navigation</title>
+   <!-- This is code to embed/employ Google Fonts in the site design, we'll learn more about this next week--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- End of Google Fonts embed--->
+    
+  <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: #f9f8f6;
+            margin: 0;
+            color: #666;
+        }
+      
+      
+      
+        .wrapper {
+            width: 940px;
+            margin: 20px auto;
+            background: #ffffff;
+            border: 2px solid #000;
+            padding: 20px;
+        }
+
+        #header {
+            height: 120px;
+            background: url("https://i.imgur.com/4rcWA3C.jpg") no-repeat center;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+    
+    
+        #nav {
+            background: #666;
+            padding: 10px 20px;
+            text-align: left;
+        }
+
+        #nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        #nav ul li {
+            margin-right: 20px;
+        }
+
+        #nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 700;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        #nav ul li a:hover {
+            color: #de6581;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .courses {
+            width: 65%;
+        }
+
+    
+        .article {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .article figure {
+            margin: 0;
+            padding-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .article img {
+            width: 250px;
+            height: auto;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .article figcaption {
+            font-size: 90%;
+            text-align: left;
+            font-weight: 300;
+            margin-top: 5px;
+        }
+
+        #sidebar {
+            width: 30%;
+        }
+        #footer {
+            clear: both;
+            color: #ffffff;
+            background-color: #aeaca8;
+            height: 30px;
+            font-size: 80%;
+            text-align: center;
+            padding: 7px 0;
+        }
+    
+    </style>
+    </head>
+    <body>
+    <div class="wrapper">
+        <div id="header">
+        </div>
+        <div id="nav">
+            <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Classes</a></li>
+            <li><a href="/">Catering</a></li>
+            <li><a href="/">About</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="courses">
+                <div class="article">
+                    <figure>
+                        <img src="https://i.imgur.com/GaC5TSH.jpg" alt="Bok Choi">
+                        <figcaption>Bok Choi</figcaption>
+                    </figure>
+                    <div>
+                        <h2>Japanese Vegetarian</h2>
+                        <h3>Five week course in London</h3>
+                        <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <figure>
+                        <img src="https://i.imgur.com/dd27k4P.jpg" alt="Teriyaki Sauce">
+                        <figcaption>Teriyaki Sauce</figcaption>
+                    </figure>
+                    <div>
+                        <h2>Sauces Masterclass</h2>
+                        <h3>One day workshop</h3>
+                        <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                
+              <div class="popular-recipes">
+                    
+                  
+                  <h2>Popular Recipes</h2>
+                    <p>Yakitori (grilled chicken)<br>Tsukune (minced chicken patties)<br>Okonomiyaki (savory pancakes)<br>Mizutaki (chicken stew)</p>
+                </div>
+                <div class="contact-details">
+                    <h2>Contact</h2>
+                  
+                    <p>Yoko's Kitchen<br>27 Redchurch Street<br>Shoreditch<br>London E2 7DP</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            &copy; 2024 Yoko's Kitchen
+        </div>
+    </div>
+</body>
+</html>
